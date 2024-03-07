@@ -83,30 +83,7 @@ window.addEventListener("keydown", (e) => {
  })
 
 function eliminarAlbum(e) {
-   // Evento para detectar cuando el usuario presiona la tecla 'f'
-document.addEventListener('keypress', function(event) {
-    if (event.key === 'f') {
-        // Pedir al usuario el nombre del álbum a eliminar
-        var albumNombre = prompt('Ingrese el nombre del álbum que desea eliminar:');
-
-        // Buscar la posición del álbum buscado en el array
-        var index = albumesFamosos.findIndex(function(album) {
-            return album.nombre === albumNombre;
-        });
-
-        // Si se encuentra el álbum, eliminarlo del array
-        if (index !== -1) {
-            albumesFamosos.splice(index, 1);
-            console.log('Álbum eliminado correctamente.');
-            
-            // Llamar a las funciones de renderizar y marcar favorito
-            renderizarAlbumes(albumesFamosos);;
-            marcarFavorito();
-        } else {
-            console.log('El álbum no fue encontrado.');
-        }
-    }
-});
-
-};
+    // desarrollar la función 👇
+    
+}
 
